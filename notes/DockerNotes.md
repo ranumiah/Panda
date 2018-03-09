@@ -130,6 +130,12 @@ Running the following command will change between Linux and Windows containers
 
 `docker rmi -f $(docker images -q)`This will delete all Docker images.
 
+### DockerFile
+
+`docker build --rm=false --no-cache -t test .`
+`--rm=false` -- This will not delete the intermediate containers.
+`-t` -- This is tag i.e. the name.
+
 docker version
 docker info
 
